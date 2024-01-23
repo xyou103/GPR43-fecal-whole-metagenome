@@ -1,0 +1,409 @@
+#eristwo
+#module load
+module use /apps/modulefiles/base
+module load picard/2.6.0-Java-1.8.0_161
+module load trimmomatic/0.36
+
+#picard convert bam to fastq.gz
+bsub -q normal -v 12000 -J F1 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F1.bam F=F1.R1.fastq.gz F2=F1.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F2 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F2.bam F=F2.R1.fastq.gz F2=F2.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F3 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F3.bam F=F3.R1.fastq.gz F2=F3.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F4 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F4.bam F=F4.R1.fastq.gz F2=F4.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F5 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F5.bam F=F5.R1.fastq.gz F2=F5.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F6 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F6.bam F=F6.R1.fastq.gz F2=F6.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F7 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F7.bam F=F7.R1.fastq.gz F2=F7.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F8 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F8.bam F=F8.R1.fastq.gz F2=F8.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F9 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F9.bam F=F9.R1.fastq.gz F2=F9.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F10 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F10.bam F=F10.R1.fastq.gz F2=F10.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F11 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F11.bam F=F11.R1.fastq.gz F2=F11.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F12 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F12.bam F=F12.R1.fastq.gz F2=F12.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F13 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F13.bam F=F13.R1.fastq.gz F2=F13.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F14 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F14.bam F=F14.R1.fastq.gz F2=F14.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F15 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F15.bam F=F15.R1.fastq.gz F2=F15.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F16 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F16.bam F=F16.R1.fastq.gz F2=F16.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F17 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F17.bam F=F17.R1.fastq.gz F2=F17.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F18 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F18.bam F=F18.R1.fastq.gz F2=F18.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F19 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F19.bam F=F19.R1.fastq.gz F2=F19.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F20 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F20.bam F=F20.R1.fastq.gz F2=F20.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F21 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F21.bam F=F21.R1.fastq.gz F2=F21.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F22 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F22.bam F=F22.R1.fastq.gz F2=F22.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F23 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F23.bam F=F23.R1.fastq.gz F2=F23.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F24 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F24.bam F=F24.R1.fastq.gz F2=F24.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F25 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F25.bam F=F25.R1.fastq.gz F2=F25.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F26 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F26.bam F=F26.R1.fastq.gz F2=F26.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F27 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F27.bam F=F27.R1.fastq.gz F2=F27.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F28 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F28.bam F=F28.R1.fastq.gz F2=F28.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F29 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F29.bam F=F29.R1.fastq.gz F2=F29.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F30 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F30.bam F=F30.R1.fastq.gz F2=F30.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F31 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F31.bam F=F31.R1.fastq.gz F2=F31.R2.fastq.gz"
+
+bsub -q normal -v 12000 -J F32 "java -Xmx2g -jar $EBROOTPICARD/picard.jar SamToFastq I=F32.bam F=F32.R1.fastq.gz F2=F32.R2.fastq.gz"
+
+#conda activate humann environment
+conda activate humann
+
+#fastqc check quality
+bsub -q normal fastqc *.fast.gz
+
+#update humann to v3.5
+conda install -c biobakery humann
+
+#update humann databases
+
+bsub -q normal -R rusage[mem=16000] -v 32000 "humann_databases --download chocophlan full ./humann_DB_2022 --update-config yes"
+bsub -q normal -J diamond -R rusage[mem=16000] -v 32000 "humann_databases --download uniref uniref90_diamond ./humann_DB_2022 --update-config yes"
+bsub -q normal -J utility -R rusage[mem=16000] -v 32000 "humann_databases --download utility_mapping full ./humann_DB_2022 --update-config yes"
+
+#update kneaddate to v0.10.0
+conda install -c biobakery kneaddata
+
+#update metaphlan to v4.0.1
+conda install -c bioconda metaphlan
+
+#update metaphlan database
+bsub -q normal -R rusage[mem=16000] -v 32000 "metaphlan --install --bowtie2db metaphlan_DB_2022"
+
+#bowtie2 index reference genome GRCm39
+bsub -q normal -v 32000 bowtie2-build GRCm39.fna GRCm39.bowtie2
+
+#filter host conmainant reads by kneaddata v0.10.0
+
+bsub -q normal -v 32000 -J F1 kneaddata --input F1.R1.fastq.gz --input F1.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../scratch/F1 --output-prefix F1
+
+bsub -q normal -v 32000 -J F2 kneaddata --input F2.R1.fastq.gz --input F2.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../scratch/F2 --output-prefix F2
+
+bsub -q normal -v 32000 -J F3 kneaddata --input F3.R1.fastq.gz --input F3.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../scratch/F3 --output-prefix F3
+
+bsub -q normal -v 32000 -J F4 kneaddata --input F4.R1.fastq.gz --input F4.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../scratch/F4 --output-prefix F4
+
+bsub -q normal -v 32000 -J F5 kneaddata --input F5.R1.fastq.gz --input F5.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F5 --output-prefix F5
+
+bsub -q normal -v 32000 -J F6 kneaddata --input F6.R1.fastq.gz --input F6.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F6 --output-prefix F6
+
+bsub -q normal -v 32000 -J F7 kneaddata --input F7.R1.fastq.gz --input F7.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F7 --output-prefix F7
+
+bsub -q normal -v 32000 -J F8 kneaddata --input F8.R1.fastq.gz --input F8.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F8 --output-prefix F8
+
+bsub -q normal -v 32000 -J F9 kneaddata --input F9.R1.fastq.gz --input F9.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F9 --output-prefix F9
+
+bsub -q normal -v 32000 -J F10 kneaddata --input F10.R1.fastq.gz --input F10.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F10 --output-prefix F10
+
+bsub -q normal -v 32000 -J F11 kneaddata --input F11.R1.fastq.gz --input F11.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F11 --output-prefix F11
+
+bsub -q normal -v 32000 -J F12 kneaddata --input F12.R1.fastq.gz --input F12.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F12 --output-prefix F12
+
+bsub -q normal -v 32000 -J F13 kneaddata --input F13.R1.fastq.gz --input F13.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F13 --output-prefix F13
+
+bsub -q normal -v 32000 -J F14 kneaddata --input F14.R1.fastq.gz --input F14.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F14 --output-prefix F14
+
+bsub -q normal -v 32000 -J F15 kneaddata --input F15.R1.fastq.gz --input F15.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F15 --output-prefix F15
+
+bsub -q normal -v 32000 -J F16 kneaddata --input F16.R1.fastq.gz --input F16.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F16 --output-prefix F16
+
+bsub -q normal -v 32000 -J F17 kneaddata --input F17.R1.fastq.gz --input F17.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F17 --output-prefix F17
+
+bsub -q normal -v 32000 -J F18 kneaddata --input F18.R1.fastq.gz --input F18.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F18 --output-prefix F18
+
+bsub -q normal -v 32000 -J F19 kneaddata --input F19.R1.fastq.gz --input F19.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F19 --output-prefix F19
+
+bsub -q normal -v 32000 -J F20 kneaddata --input F20.R1.fastq.gz --input F20.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F20 --output-prefix F20
+
+bsub -q normal -v 32000 -J F21 kneaddata --input F21.R1.fastq.gz --input F21.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F21 --output-prefix F21
+
+bsub -q normal -v 32000 -J F22 kneaddata --input F22.R1.fastq.gz --input F22.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F22 --output-prefix F22
+
+bsub -q normal -v 32000 -J F23 kneaddata --input F23.R1.fastq.gz --input F23.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F23 --output-prefix F23
+
+bsub -q normal -v 32000 -J F24 kneaddata --input F24.R1.fastq.gz --input F24.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F24 --output-prefix F24
+
+bsub -q normal -v 32000 -J F25 kneaddata --input F25.R1.fastq.gz --input F25.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F25 --output-prefix F25
+
+bsub -q normal -v 32000 -J F26 kneaddata --input F26.R1.fastq.gz --input F26.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F26 --output-prefix F26
+
+bsub -q normal -v 32000 -J F27 kneaddata --input F27.R1.fastq.gz --input F27.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F27 --output-prefix F27
+
+bsub -q normal -v 32000 -J F28 kneaddata --input F28.R1.fastq.gz --input F28.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F28 --output-prefix F28
+
+bsub -q normal -v 32000 -J F29 kneaddata --input F29.R1.fastq.gz --input F29.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F29 --output-prefix F29
+
+bsub -q normal -v 32000 -J F30 kneaddata --input F30.R1.fastq.gz --input F30.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F30 --output-prefix F30
+
+bsub -q normal -v 32000 -J F31 kneaddata --input F31.R1.fastq.gz --input F31.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F31 --output-prefix F31
+
+bsub -q normal -v 32000 -J F32 kneaddata --input F32.R1.fastq.gz --input F32.R2.fastq.gz --reference-db ../../MouseReferenceGenome/GRCm39.bowtie2 --output ../../scratch/F32 --output-prefix F32
+
+#gzip fastq to fastq.gz using gzip command
+gzip *fastq
+
+#concatenate fastq.gz files from kneaddata output
+bsub -q normal -J F1 "cat F1/F1_*.fastq.gz > ./F1.filtered.fastq.gz"
+
+bsub -q normal -J F2 "cat F2/F2_*.fastq.gz > ./F2.filtered.fastq.gz"
+
+bsub -q normal -J F3 "cat F3/F3_*.fastq.gz > ./F3.filtered.fastq.gz"
+
+bsub -q normal -J F4 "cat F4/F4_*.fastq.gz > ./F4.filtered.fastq.gz"
+
+bsub -q normal -J F5 "cat F5/F5_*.fastq.gz > ./F5.filtered.fastq.gz"
+
+bsub -q normal -J F6 "cat F6/F6_*.fastq.gz > ./F6.filtered.fastq.gz"
+
+bsub -q normal -J F7 "cat F7/F7_*.fastq.gz > ./F7.filtered.fastq.gz"
+
+bsub -q normal -J F8 "cat F8/F8_*.fastq.gz > ./F8.filtered.fastq.gz"
+
+bsub -q normal -J F9 "cat F9/F9_*.fastq.gz > ./F9.filtered.fastq.gz"
+
+bsub -q normal -J F10 "cat F10/F10_*.fastq.gz > ./F10.filtered.fastq.gz"
+
+bsub -q normal -J F11 "cat F11/F11_*.fastq.gz > ./F11.filtered.fastq.gz"
+
+bsub -q normal -J F12 "cat F12/F12_*.fastq.gz > ./F12.filtered.fastq.gz"
+
+bsub -q normal -J F13 "cat F13/F13_*.fastq.gz > ./F13.filtered.fastq.gz"
+
+bsub -q normal -J F14 "cat F14/F14_*.fastq.gz > ./F14.filtered.fastq.gz"
+
+bsub -q normal -J F15 "cat F15/F15_*.fastq.gz > ./F15.filtered.fastq.gz"
+
+bsub -q normal -J F16 "cat F16/F16_*.fastq.gz > ./F16.filtered.fastq.gz"
+
+bsub -q normal -J F17 "cat F17/F17_*.fastq.gz > ./F17.filtered.fastq.gz"
+
+bsub -q normal -J F18 "cat F18/F18_*.fastq.gz > ./F18.filtered.fastq.gz"
+
+bsub -q normal -J F19 "cat F19/F19_*.fastq.gz > ./F19.filtered.fastq.gz"
+
+bsub -q normal -J F20 "cat F20/F20_*.fastq.gz > ./F20.filtered.fastq.gz"
+
+bsub -q normal -J F21 "cat F21/F21_*.fastq.gz > ./F21.filtered.fastq.gz"
+
+bsub -q normal -J F22 "cat F22/F22_*.fastq.gz > ./F22.filtered.fastq.gz"
+
+bsub -q normal -J F23 "cat F23/F23_*.fastq.gz > ./F23.filtered.fastq.gz"
+
+bsub -q normal -J F24 "cat F24/F24_*.fastq.gz > ./F24.filtered.fastq.gz"
+
+bsub -q normal -J F25 "cat F25/F25_*.fastq.gz > ./F25.filtered.fastq.gz"
+
+bsub -q normal -J F26 "cat F26/F26_*.fastq.gz > ./F26.filtered.fastq.gz"
+
+bsub -q normal -J F27 "cat F27/F27_*.fastq.gz > ./F27.filtered.fastq.gz"
+
+bsub -q normal -J F28 "cat F28/F28_*.fastq.gz > ./F28.filtered.fastq.gz"
+
+bsub -q normal -J F29 "cat F29/F29_*.fastq.gz > ./F29.filtered.fastq.gz"
+
+bsub -q normal -J F30 "cat F30/F30_*.fastq.gz > ./F30.filtered.fastq.gz"
+
+bsub -q normal -J F31 "cat F31/F31_*.fastq.gz > ./F31.filtered.fastq.gz"
+
+bsub -q normal -J F32 "cat F32/F32_*.fastq.gz > ./F32.filtered.fastq.gz"
+
+#humann3.5
+#update humann_config 
+humann_config --update run_modes threads 8
+
+bsub -q bigmem -J F1 humann --input F1.filtered.fastq.gz --output ../scratch/F1_humann
+
+bsub -q bigmem -J F2 humann --input F2.filtered.fastq.gz --output ../scratch/F2_humann
+
+bsub -q bigmem -J F3 humann --input F3.filtered.fastq.gz --output ../scratch/F3_humann
+
+bsub -q bigmem -J F3r humann --input F3.filtered.fastq.gz --resume --output ../scratch/F3_humann
+
+bsub -q bigmem -J F4 humann --input F4.filtered.fastq.gz --output ../scratch/F4_humann
+
+bsub -q bigmem -J F5 humann --input F5.filtered.fastq.gz --output F5_humann
+
+bsub -q bigmem -J F6 humann --input F6.filtered.fastq.gz --output F6_humann
+
+bsub -q bigmem -J F7 humann --input F7.filtered.fastq.gz --output F7_humann
+
+bsub -q bigmem -J F7r humann --input F7.filtered.fastq.gz --resume --output F7_humann
+
+bsub -q bigmem -J F8 humann --input F8.filtered.fastq.gz --output F8_humann
+
+bsub -q bigmem -J F8r humann --input F8.filtered.fastq.gz --resume --output F8_humann
+
+bsub -q bigmem -J F9 humann --input F9.filtered.fastq.gz --output F9_humann
+
+bsub -q bigmem -J F10 humann --input F10.filtered.fastq.gz --output F10_humann
+
+bsub -q bigmem -J F10 humann --input F10.filtered.fastq.gz --resume --output F10_humann
+
+bsub -q bigmem -J F11 humann --input F11.filtered.fastq.gz --output F11_humann
+
+bsub -q bigmem -J F11r humann --input F11.filtered.fastq.gz --resume --output F11_humann
+
+bsub -q bigmem -J F12 humann --input F12.filtered.fastq.gz --output F12_humann
+
+bsub -q bigmem -J F13 humann --input F13.filtered.fastq.gz --output F13_humann
+
+bsub -q bigmem -J F14 humann --input F14.filtered.fastq.gz --output F14_humann
+
+bsub -q bigmem -J F15 humann --input F15.filtered.fastq.gz --output F15_humann
+
+bsub -q bigmem -J F15r humann --input F15.filtered.fastq.gz --resume --output F15_humann
+
+bsub -q bigmem -J F16 humann --input F16.filtered.fastq.gz --output F16_humann
+
+bsub -q bigmem -J F17 humann --input F17.filtered.fastq.gz --output F17_humann
+
+bsub -q bigmem -J F18 humann --input F18.filtered.fastq.gz --output F18_humann
+
+bsub -q bigmem -J F18r humann --input F18.filtered.fastq.gz --resume --output F18_humann
+
+bsub -q bigmem -J F19 humann --input F19.filtered.fastq.gz --output F19_humann
+
+bsub -q bigmem -J F20 humann --input F20.filtered.fastq.gz --output F20_humann
+
+bsub -q bigmem -J F21 humann --input F21.filtered.fastq.gz --output F21_humann
+
+bsub -q bigmem -J F22 humann --input ../scratch/F22.filtered.fastq.gz --output F22_humann
+
+bsub -q bigmem -J F23 humann --input ../scratch/F23.filtered.fastq.gz --output F23_humann
+
+bsub -q bigmem -J F24 humann --input ../scratch/F24.filtered.fastq.gz --output F24_humann
+
+bsub -q bigmem -J F25 humann --input ../scratch/F25.filtered.fastq.gz --output F25_humann
+
+bsub -q bigmem -J F26 humann --input F26.filtered.fastq.gz --output F26_humann
+
+bsub -q bigmem -J F27 humann --input F27.filtered.fastq.gz --output F27_humann
+
+bsub -q bigmem -J F28 humann --input F28.filtered.fastq.gz --output F28_humann
+
+bsub -q bigmem -J F28 humann --input F28.filtered.fastq.gz --resume --output F28_humann
+
+bsub -q bigmem -J F29 humann --input F29.filtered.fastq.gz --output F29_humann
+
+bsub -q bigmem -J F30 humann --input F30.filtered.fastq.gz --output F30_humann
+
+bsub -q bigmem -J F31r humann --input F31.filtered.fastq.gz --resume --output F31_humann
+
+bsub -q bigmem -J F32 humann --input F32.filtered.fastq.gz --output F32_humann
+
+#merge metaphlan output tables
+bsub -q normal merge_metaphlan_tables.py *.tsv > merged_abundance_table.txt
+
+#metaphlan absoluate counts
+bsub -q bigmem metaphlan F1.filtered.fastq.gz --input_type fastq --bowtie2out F1.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F1.abs.txt
+
+bsub -q bigmem metaphlan F2.filtered.fastq.gz --input_type fastq --bowtie2out F2.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F2.abs.txt
+
+bsub -q bigmem metaphlan F3.filtered.fastq.gz --input_type fastq --bowtie2out F3.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F3.abs.txt
+
+bsub -q bigmem metaphlan F4.filtered.fastq.gz --input_type fastq --bowtie2out F4.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F4.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F5.filtered.fastq.gz --input_type fastq --bowtie2out F5.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F5.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F6.filtered.fastq.gz --input_type fastq --bowtie2out F6.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F6.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F7.filtered.fastq.gz --input_type fastq --bowtie2out F7.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F7.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F8.filtered.fastq.gz --input_type fastq --bowtie2out F8.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F8.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F9.filtered.fastq.gz --input_type fastq --bowtie2out F9.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F9.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F10.filtered.fastq.gz --input_type fastq --bowtie2out F10.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F10.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F11.filtered.fastq.gz --input_type fastq --bowtie2out F11.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F11.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F12.filtered.fastq.gz --input_type fastq --bowtie2out F12.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F12.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F13.filtered.fastq.gz --input_type fastq --bowtie2out F13.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F13.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F14.filtered.fastq.gz --input_type fastq --bowtie2out F14.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F14.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F15.filtered.fastq.gz --input_type fastq --bowtie2out F15.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F15.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F16.filtered.fastq.gz --input_type fastq --bowtie2out F16.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F16.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F17.filtered.fastq.gz --input_type fastq --bowtie2out F17.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F17.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F18.filtered.fastq.gz --input_type fastq --bowtie2out F18.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F18.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F19.filtered.fastq.gz --input_type fastq --bowtie2out F19.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F19.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F20.filtered.fastq.gz --input_type fastq --bowtie2out F20.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F20.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F21.filtered.fastq.gz --input_type fastq --bowtie2out F21.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F21.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F22.filtered.fastq.gz --input_type fastq --bowtie2out F22.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F22.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F23.filtered.fastq.gz --input_type fastq --bowtie2out F23.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F23.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F24.filtered.fastq.gz --input_type fastq --bowtie2out F24.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F24.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F25.filtered.fastq.gz --input_type fastq --bowtie2out F25.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F25.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F26.filtered.fastq.gz --input_type fastq --bowtie2out F26.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F26.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F27.filtered.fastq.gz --input_type fastq --bowtie2out F27.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F27.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F28.filtered.fastq.gz --input_type fastq --bowtie2out F28.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F28.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F29.filtered.fastq.gz --input_type fastq --bowtie2out F29.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F29.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F30.filtered.fastq.gz --input_type fastq --bowtie2out F30.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F30.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F31.filtered.fastq.gz --input_type fastq --bowtie2out F31.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F31.abs.txt
+
+bsub -q bigmem metaphlan ../scratch/F32.filtered.fastq.gz --input_type fastq --bowtie2out F32.bowtie2.bz2 --nproc 5 -t rel_ab_w_read_stats -o F32.abs.txt
+
+#humann join table
+bsub -q normal humann_join_tables -i ./ -o  join_path.tsv
+bsub -q normal humann_join_tables -i ./ -o  join_gene.tsv
+
+#humann regroup gene to ec
+bsub -q normal humann_regroup_table -i join_gene.tsv -g uniref90_level4ec -o./join_ec.tsv
+
+
+#renorm RPK to cpm
+bsub -q normal humann_renorm_table -i join_path.tsv -o path_cpm.tsv -u cpm --update-snames
+bsub -q normal humann_renorm_table -i join_ec.tsv -o ec_cpm.tsv -u cpm --update-snames
+
+#split stratified table
+bsub -q normal humann_split_stratified_table -i path_cpm.tsv -o ./
+bsub -q normal humann_split_stratified_table -i ec_cpm.tsv -o ./
+
+
+
+
+
+
+
+
+
+
